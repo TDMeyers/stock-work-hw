@@ -1,7 +1,3 @@
-.NavBarContainer {
-  /* background-color: rgb(255, 2, 2); */
-}
-
 .NavBar {
   display: flex;
   justify-content: space-evenly;

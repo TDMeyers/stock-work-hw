@@ -1,7 +1,7 @@
-import StocksList from "../components/StocksList";
+import StocksList from "../Components/StocksList";
 import useStocksContext from "../Hooks/use-stocks-context";
 
-function MyStock() {
+export default function MyStock() {
   const { follow } = useStocksContext();
 
   return (
@@ -10,5 +10,3 @@ function MyStock() {
     </div>
   );
 }
-
-export default MyStock;

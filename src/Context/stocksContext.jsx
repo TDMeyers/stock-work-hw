@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import stocks from "./Components/data.js";
+import stocks from "../Components/data";
 
 export const StocksContext = createContext();
 

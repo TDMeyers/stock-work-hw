@@ -1,4 +1,4 @@
-import StocksList from "../components/StocksList";
+import StocksList from "../Components/StocksList";
 import stocks from "../Components/data";
 
 function Dashboard() {

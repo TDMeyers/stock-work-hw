@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { StocksContext } from "../context/stocksContext";
+import { StocksContext } from "../Context/stocksContext";
 
 function useStocksContext() {
   return useContext(StocksContext);

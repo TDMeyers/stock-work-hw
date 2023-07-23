@@ -1,4 +1,10 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from "react-router-dom";
+import NavBar from "./Components/NavBar";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import MyStock from "./Pages/MyStock";
+import Stock from "./Pages/Stock";
+import Dashboard from "./Pages/Dashboard";
 import "./App.css";
 
 function App() {
@@ -28,7 +34,7 @@ function App() {
           path="/follow"
         />
       </Routes>
-      </>
+    </>
   );
 }
 

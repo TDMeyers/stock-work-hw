@@ -1,17 +1,14 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/nav.css";
 
 function NavBar() {
   const navigate = useNavigate();
+
   return (
-    <div className="NavBarContainer">
-      <ol className="NavBar">
-        <li onClick={() => navigate("/")}>Home</li>
-        <li onClick={() => navigate("/about")}>About</li>
-        <li onClick={() => navigate("/stock")}>Dashboard</li>
-        <li onClick={() => navigate("/follow")}>Following</li>
-      </ol>
+    <div className="navbar navbar-dark bg-primary">
+      <h2 onClick={() => navigate("/stocks")}>Home</h2>
+      <h2 onClick={() => navigate("/mystock")}>My Stocks</h2>
+      <h2 onClick={() => navigate("/about")}>About</h2>
     </div>
   );
 }

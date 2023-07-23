@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
 import { Routes, Route, Navigate } from 'react-router-dom';
 import "./App.css";
 
 function App() {
   return (
-    <StockContextProvider>
+    <>
       <NavBar />
       <Routes>
         <Route
@@ -29,7 +28,7 @@ function App() {
           path="/follow"
         />
       </Routes>
-    </StockContextProvider>
+      </>
   );
 }
 

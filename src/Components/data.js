@@ -1,4 +1,18 @@
-const stocks = [
+export default function getData() {
+  async function getData() {
+    // const response = await fetch("https://financialmodelingprep.com/api/v3/historical-price-full/BTCUSD?apikey=YOUR_API_KEY");
+    // const stocks = await response.json();
+    console.log("hello world");
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  return console.log("hello world");
+}
+
+export const stocks = [
   {
     name: "Apple Inc.",
     symbol: "AAPL",
@@ -54,5 +68,3 @@ const stocks = [
     open: 36.58,
   },
 ];
-
-export default stocks;

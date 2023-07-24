@@ -10,7 +10,7 @@ function Stock() {
   const params = useParams();
 
   useEffect(() => {
-    stocksData.find(item => item.symbol === params.symbol && setStock(item));
+    stocksData.find((item) => item.symbol === params.symbol && setStock(item));
   }, []);
 
   return (

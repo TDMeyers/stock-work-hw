@@ -1,5 +1,5 @@
 import StocksItem from "./StocksItem";
-// import "./StocksList.css";
+import "../Styles/StocksList.css";
 
 function StocksList({ data }) {
   const renderList = data.map((stock) => (

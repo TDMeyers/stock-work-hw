@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import useStocksContext from "../Hooks/use-stocks-context";
-// import "./StocksItem.css";
+import "../Styles/StocksItem.css";
 
 function StocksItem({ stockInfo }) {
   const navigate = useNavigate();

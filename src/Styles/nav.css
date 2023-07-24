@@ -9,10 +9,16 @@
   list-style-type: none;
 }
 
-li {
-  padding: 2%;
+h2 {
+  cursor: pointer;
 }
-li:hover {
-  background-color: rgba(11, 192, 74, 0.35);
-  border-radius: 15%;
+
+h2:hover {
+  filter: brightness(15%);
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }

@@ -3,7 +3,7 @@ import stocks from "../Components/data";
 
 export const StocksContext = createContext();
 
-export function stocksContextProvider({ children }) {
+export function StocksContextProvider({ children }) {
   const [stocksData, setStocksData] = useState(stocks);
   const [follow, setFollow] = useState([]);
 

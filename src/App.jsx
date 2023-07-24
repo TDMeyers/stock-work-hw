@@ -1,40 +1,24 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import NavBar from "./Components/NavBar";
-import About from "./Pages/About";
-import Home from "./Pages/Home";
-import MyStock from "./Pages/MyStock";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./Components/NavBar";
+import About from "./Pages/about";
+import Home from "./Pages/home";
+import MyStock from './pages/MyStock'
 import Stock from "./Pages/Stock";
 import Dashboard from "./Pages/Dashboard";
-import "./App.css";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route
-          element={<Home />}
-          path="/"
-        />
-        <Route
-          element={<About />}
-          path="/about"
-        />
+    <div>
+      <Nav />
 
-        <Route
-          element={<Stock />}
-          path="/stock/:symbol"
-        />
-        <Route
-          element={<Dashboard />}
-          path="/stock"
-        />
-        <Route
-          element={<Following />}
-          path="/follow"
-        />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/mystock" element={<MyStock />} />
+        <Route path="/stocks" element={<Dashboard />} />
+        <Route path="/stocks/:symbol" element={<Stock />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
